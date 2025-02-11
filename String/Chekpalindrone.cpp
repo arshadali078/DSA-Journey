@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cstring> // For strcmp
+#include<iostream>
 using namespace std;
 
 bool CheckPalindrome(char name[], int n) {
@@ -16,24 +15,17 @@ bool CheckPalindrome(char name[], int n) {
     return true;
 }
 
-void Reverse(char name[], int n) {
-    int start = 0;
-    int end = n - 1;
+int GetLength(char name[]){
+    int count=0;
 
-    while (start < end) {
-        swap(name[start++], name[end--]);
-    }
-}
-
-int GetLength(char name[]) {
-    int count = 0;
-    for (int i = 0; name[i] != '\0'; i++) {
+    for(int i=0;  name[i]!='\0';i++){
         count++;
+
     }
     return count;
 }
+int main(){
 
-int main() {
     char name[100];
 
     cout << "Enter your name: ";
@@ -50,8 +42,8 @@ int main() {
         cout << "The string is not a palindrome." << endl;
     }
 
-    Reverse(name, len);
-    cout << "Reversed String is: " << name << endl;
+
+
 
     return 0;
 }
