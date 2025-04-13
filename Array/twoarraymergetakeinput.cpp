@@ -1,3 +1,7 @@
+
+//2.write a program for take input from user two n- size of sorted array and merge them without using any built-in function and 
+//program complexity should be O(n) only. output should be sort array.
+
 #include <iostream>
 using namespace std;
 
